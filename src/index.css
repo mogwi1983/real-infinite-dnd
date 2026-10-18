@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0b0f17;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-fantasy {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1623;
+}
+::-webkit-scrollbar-thumb {
+  background: #25334a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4e6d;
+}
+
+/* 3D Dice Transformations */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes dice-tumble {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.9);
+  }
+  25% {
+    transform: rotateX(240deg) rotateY(180deg) rotateZ(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotateX(540deg) rotateY(360deg) rotateZ(270deg) scale(1.15);
+  }
+  75% {
+    transform: rotateX(720deg) rotateY(540deg) rotateZ(450deg) scale(1.05);
+  }
+  100% {
+    transform: rotateX(1080deg) rotateY(720deg) rotateZ(720deg) scale(1);
+  }
+}
+
+.animate-dice-tumble {
+  animation: dice-tumble 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Ambient vignette */
+.fantasy-vignette {
+  background: radial-gradient(circle at 50% 30%, rgba(20, 29, 46, 0.4) 0%, rgba(11, 15, 23, 0.95) 100%);
+}

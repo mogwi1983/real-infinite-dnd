@@ -1,0 +1,8 @@
+{
+  "name": "Realm of Eldoria - Infinite D&D Adventure",
+  "description": "An interactive single-player Dungeons & Dragons adventure with an AI Dungeon Master, animated 3D dice, 5e mechanics, character creation, and persistent progression.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

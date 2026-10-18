@@ -1,0 +1,6 @@
+{
+  "summary": "Implementation plan for an interactive single-player Dungeons & Dragons game featuring an infinite campaign in a classic high-fantasy realm. The game includes character creation with race/class combinations, an AI Dungeon Master powered by Gemini 3.8 Flash, interactive 3D/animated d20 dice rolls for 5e checks and combat, contextual preselected action cards alongside custom text actions, persistent inventory/XP/loot progression, and a minimalist modern fantasy interface with clean typography and wood textures.",
+  "updatedAt": "2026-10-18T15:50:00.199307830Z",
+  "requestFeedback": true,
+  "userFacing": true
+}
